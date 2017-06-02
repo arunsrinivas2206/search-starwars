@@ -1,0 +1,16 @@
+<div>
+	<form>
+	  <div class="alert alert-danger" role="alert" *ngIf="error">
+		<strong>Oh snap!</strong> Invalid username-password combination. Please try with the correct credentials.
+	  </div>
+	  <div class="form-group">
+	    <label for="exampleInputEmail">Username</label>
+	    <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter username (Starwars character name)" [(ngModel)]="username" name="username">
+	  </div>
+	  <div class="form-group">
+	    <label for="exampleInputPassword">Password</label>
+	    <input type="password" class="form-control" id="exampleInputPassword" placeholder="Enter password (Birth year)" [(ngModel)]="password" name="password">
+	  </div>
+	  <button type="submit" class="btn btn-primary" (click)="verifyLogin()">Log in</button>
+	</form>
+</div>

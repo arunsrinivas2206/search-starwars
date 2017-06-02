@@ -1,7 +1,11 @@
 import { Component } from '@angular/core';
+import { StarwarsService } from './services/starwars.service';
 
 @Component({
+  moduleId: module.id,
   selector: 'my-app',
-  template: `<h1>Hello {{name}}</h1>`,
+  templateUrl: 'app.component.html',
+  providers: [StarwarsService]
 })
-export class AppComponent  { name = 'Angular'; }
+
+export class AppComponent  { }

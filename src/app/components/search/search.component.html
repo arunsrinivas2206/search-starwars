@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-md-12">
+        <form class="well">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search for..." [(ngModel)]="planet" name="planet" (keyup)="searchPlanet()">
+             </div>    
+        </form>    
+    </div>
+</div>
+
+<div class="row" *ngIf="planets">
+	<div class="col-md-12">
+		<ul class="list-group">
+			<li *ngFor="let planet of planets" class="list-group-item">
+				<div class="font_{{populations.indexOf(planet.population)}}" id={{planet.population}}>
+					{{planet.name}}
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="row" *ngIf="!planets">
+	<div class="col-md-12">
+		<h4>No results found</h4>
+	</div>
+</div>

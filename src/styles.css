@@ -3,3 +3,37 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
 }
+
+.font_0 {
+  font-size: 13px;
+}
+.font_1 {
+  font-size: 16px;
+}
+.font_2 {
+  font-size: 19px;
+}
+.font_3 {
+  font-size: 23px;
+}
+.font_4 {
+  font-size: 26px;
+}
+.font_5 {
+  font-size: 30px;
+}
+.font_6 {
+  font-size: 33px;
+}
+.font_7 {
+  font-size: 37px;
+}
+.font_8 {
+  font-size: 40px;
+}
+.font_9 {
+  font-size: 45px;
+}
+.font_-1 {
+  font-weight: bold;
+}

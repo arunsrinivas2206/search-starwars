@@ -1,0 +1,18 @@
+<div *ngIf="starwarsService.authenticated()">
+	<div class="jumbotron">
+		<h3 class="text-center">
+			Welcome to the Starwars world! Here you can find your favorite starwars character(s).
+		</h3>
+		<p class="text-center">
+			Use the 'Search' link above to search your favorite starwars character(s).
+		</p>
+	</div>
+</div>
+
+<div *ngIf="!starwarsService.authenticated()">
+	<div class="jumbotron">
+		<h4 class="text-center">
+			Welcome to the Starwars world!. Use the 'Login' link above and log into the Starwars world!	
+		</h4>
+	</div>
+</div>
