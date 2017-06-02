@@ -1,5 +1,12 @@
-App working:
+# Installation and working
 
+## Installation:
+Download the code 
+In the command prompt: 
+npm install 
+npm start
+
+## App working:
 Log in 
 Username: Any starwars character name 
 Password: Corresponding birth year of the character
